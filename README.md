@@ -9,6 +9,7 @@ The two core design constraints I have in a blogging site:
 To do so I have attempted to condense the necessary components into two main files that you can control easily using an LLM:
 1. `/src/app/page.tsx` which is the home page and root
 2. `/posts/[slug]/page.tsx` which is the blog page
+
 The styles for both of these are defined almost entirely inline using tailwind, with the exception that some high level css properties are defined in `/src/app/globals.css`
 
 ## How To Use
