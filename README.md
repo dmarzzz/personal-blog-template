@@ -14,8 +14,11 @@ The styles for both of these are defined almost entirely inline using tailwind, 
 ## How To Use
 
 ```bash
-git clone <TODO:URL>
+## Clone Repo
+git clone https://github.com/dmarzzz/personal-blog-template.git
+## Download Neccessary Packages
 yarn install
+## Run in Auto re-build Mode for Development
 yarn run dev
 ```
 
@@ -38,3 +41,4 @@ yarn run dev
 - [ ] Guide for modifying blog page
 - [ ] Route to add new blog post
 - [ ] Use Tailwind correctly 😆
+- [ ] How to Set Up with Vercel Easily
