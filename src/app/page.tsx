@@ -18,11 +18,7 @@ export default function Index() {
   );
 }
 
-type MoreStoriesProps = {
-  posts: Post[];
-};
-
-export function MoreStories({ posts }: MoreStoriesProps) {
+export function MoreStories({ posts }: { posts: Post[] }) {
   return (
     <section>
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 md:gap-x-16 lg:gap-x-32 gap-y-10 md:gap-y-16 mb-32">
@@ -57,7 +53,7 @@ export function PostPreview({
 }: PostPreviewProps) {
   return (
     <Link href={`/posts/${slug}`} passHref className="box">
-        <h3 className="text-3xl mb-3 leading-snug primary-color">
+        <h3 className="text-3xl mb-3 leading-snug text-primary">
           {title}
         </h3>
         <div className="text-lg mb-4">
@@ -68,12 +64,11 @@ export function PostPreview({
   );
 }
 
-
 export function Intro() {
   return (
-    <section className="flex flex-col md:flex-row justify-center items-center text-center mt-16 mb-16 md:mb-12 primary-color">
+    <section className="flex flex-col md:flex-row justify-center items-center text-center mt-16 mb-16 md:mb-12 text-primary">
       <h1 className="text-4xl md:text-6xl font-bold tracking-tighter leading-tight">
-      {BLOG_NAME}
+        {BLOG_NAME}
       </h1>
     </section>
   );

@@ -1,2 +1,2 @@
-export const BLOG_NAME = "Plausible Plurality.";
-export const AUTHOR = "dmarz";
+export const BLOG_NAME = "Sample Blog.";
+export const AUTHOR = "author";

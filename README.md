@@ -32,7 +32,12 @@ yarn run dev
 
 ### How to Modify Home Page Using ChatGPT
 
+Here is an example commit for modifying the home page <example commit>.
 
+1. Decide on how you would like to modify the home page
+2. Grab `/src/app/page.tsx` and `/src/app/globals.css`
+3. Enter into LLM: "Please modify the following code to have a juicy spectrum from yellow to purple, use a dark blue as the primary color, use comic sans font, and to change it so that the boxes for the posts have no 3D effect and instead have a frosted glass effect. Here is the typescript code <`/src/app/page.tsx`>, the tailwind config <`/tailwind.config.ts`> and the global css file <`/src/app/globals.css`>."
+4. Incorporate recommended changes!
 
 
 ## ToDo
@@ -42,3 +47,4 @@ yarn run dev
 - [ ] Route to add new blog post
 - [ ] Use Tailwind correctly 😆
 - [ ] How to Set Up with Vercel Easily
+- [ ] Host Markdown Files on IPFS

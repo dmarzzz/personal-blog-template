@@ -26,9 +26,7 @@ export default async function Post({ params }: Params) {
         <article className="mb-32">
           <PostHeader
             title={post.title}
-            coverImage={post.coverImage}
             date={post.date}
-            author={post.author}
           />
           <PostBody content={content} />
         </article>
@@ -71,13 +69,11 @@ export async function generateStaticParams() {
 
 type Props = {
   title: string;
-  coverImage: string;
   date: string;
-  author: Author;
 };
 
 
-export function PostHeader({ title, coverImage, date }: Props) {
+export function PostHeader({ title, date }: Props) {
   return (
     <>
       <div className="text-center mb-4">
@@ -86,7 +82,7 @@ export function PostHeader({ title, coverImage, date }: Props) {
           <DateFormatter dateString={date} />
         </div>
         {/* Horizontal rule as a separator, styled with primary color */}
-        <hr className="border-t primary-color mx-auto w-full max-w-2xl my-4" />
+        <hr className="border-t text-primary mx-auto w-full max-w-2xl my-4" />
       </div>
     </>
   );
@@ -122,7 +118,7 @@ export function PostBody({ content }: PostBodyProps) {
 
 const Header = () => {
   return (
-    <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8 primary-color">
+    <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8 text-primary">
       <Link href="/" className="hover:underline">
         {BLOG_NAME}
       </Link>
