@@ -32,7 +32,7 @@ yarn run dev
 
 ### How to Modify Home Page Using ChatGPT
 
-Here is an example commit for modifying the home page <example commit>.
+Here is an [example commit](https://github.com/dmarzzz/personal-blog-template/commit/559f1f98bbafe48f97173db28cf401a40d96cf17) for modifying the home page using an LLM.
 
 1. Decide on how you would like to modify the home page
 2. Grab `/src/app/page.tsx` and `/src/app/globals.css`
@@ -42,9 +42,9 @@ Here is an example commit for modifying the home page <example commit>.
 
 ## ToDo
 - [x] Initial Repo
-- [ ] Guide for modifying home page
+- [x] Guide for modifying home page
 - [ ] Guide for modifying blog page
 - [ ] Route to add new blog post
-- [ ] Use Tailwind correctly 😆
+- [ ] Use Tailwind better 😆
 - [ ] How to Set Up with Vercel Easily
 - [ ] Host Markdown Files on IPFS
