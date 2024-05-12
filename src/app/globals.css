@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.primary-color {
+    color: #04A57D;
+}
+
+.box {
+    display: block; /* Ensure it's block level for link */
+    box-shadow: 
+        9px 9px 16px rgba(163, 177, 198, 0.6), /* Dark shadow */
+        -9px -9px 16px rgba(255, 255, 255, 0.5); /* Light shadow */
+    border-radius: 30px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    padding: 20px; /* Padding for aesthetic spacing */
+    background: #fff;
+}
+
+.box:hover {
+    box-shadow: 
+    inset 9px 9px 16px rgba(163, 177, 198, 0.6), /* Dark shadow inset */
+    inset -9px -9px 16px rgba(255, 255, 255, 0.5); /* Light shadow inset */
+    transform: translateY(4px); /* Subtle push-down effect */
+}
